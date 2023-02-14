@@ -1,0 +1,167 @@
+/** {*/
+/*    box-sizing: border-box;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    outline: none;*/
+/*}*/
+
+/*html {*/
+/*    font-family: "Open-Sans", sans-serif;*/
+/*    font-size: 16px;*/
+/*    background-color: #50E3C2;*/
+/*}*/
+
+.flex, .action-container, #done-list li,
+#todo-list li, #done-list,
+#todo-list, #date-container, #todo-container {
+    display: flex;
+}
+
+.row, .action-container, #done-list li,
+#todo-list li, #date-container {
+    flex-direction: row;
+}
+
+.column, #done-list,
+#todo-list, #todo-container {
+    flex-direction: column;
+}
+
+#todo-container {
+    margin: 30px auto;
+    background-color: #fff;
+    width: 60%;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+#todo-container #input-container {
+    position: relative;
+    padding: 5px 5px 15px 5px;
+    border-bottom: 1px dashed #C3C3C3;
+}
+#todo-container #input-container .todo-show {
+    width: 100%;
+    height: 2em;
+    padding: 20px 12px;
+    font-size: 14px;
+    outline: none;
+    line-height: 1.42857143;
+    border: none;
+}
+#todo-container #input-container span {
+    top: 36px;
+    left: 17px;
+    position: absolute;
+    font-size: 10px;
+    color: #d0d0d0;
+}
+
+#date-container {
+    height: 80px;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+    border-bottom: 1px dashed #C3C3C3;
+}
+#date-container .active {
+    border-bottom: 1px dashed #C3C3C3;
+}
+#date-container .today {
+    align-self: flex-start;
+    text-transform: uppercase;
+    margin: 20px 0 0 5px;
+}
+#date-container #showInput {
+    display: block;
+    background-color: #FF0098;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    border: 0;
+    color: #fff;
+    font-size: 30px !important;
+    align-self: center;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+#date-container #showInput:hover {
+    box-shadow: none;
+}
+#date-container #showInput span {
+    margin: 8px;
+}
+
+.day-month-year {
+    align-items: center;
+}
+.day-month-year .day {
+    font-size: 3em;
+    font-weight: 500;
+    margin-right: 0.2em;
+}
+.day-month-year .month {
+    text-transform: uppercase;
+}
+.day-month-year .month-year {
+    border-right: 1px solid #000;
+    padding-right: 5px;
+}
+
+#done-list,
+#todo-list {
+    border-bottom: 1px dashed #C3C3C3;
+}
+#done-list .list-title,
+#todo-list .list-title {
+    text-transform: uppercase !important;
+    font-size: 14px;
+    padding: 10px 0 10px 20px;
+}
+#done-list .list-title:hover,
+#todo-list .list-title:hover {
+    background: none;
+}
+#done-list li,
+#todo-list li {
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    word-break: break-all;
+    line-height: 1.5;
+}
+#done-list li ::last-child,
+#todo-list li ::last-child {
+    border: none;
+}
+#done-list li:hover,
+#todo-list li:hover {
+    background-color: rgba(206, 222, 227, 0.27);
+}
+
+.action-container {
+    margin-left: 10px;
+}
+.action-container #delete {
+    color: #C3C3C3;
+    margin-right: 10px;
+}
+.action-container #delete:hover {
+    color: #FB5D91;
+}
+.action-container #check {
+    color: #C3C3C3;
+}
+.action-container #check:hover {
+    color: #50E3C2;
+}
+.action-container button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
