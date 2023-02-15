@@ -1,6 +1,6 @@
-# web programming  5 sem
+# web programming  6 sem
 
-Labs for web programming on the 5th semester ITMO university
+Labs for web programming on the 6th semester ITMO university
 Faculty of IT and programming
 
 
