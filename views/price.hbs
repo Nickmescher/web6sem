@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <link rel="stylesheet" href="../css/price.css">
+    <link rel="stylesheet" href="../css/task.css">
+
+    <script defer src="../js/task.js"></script>
+    <script defer src="../js/activeMenu.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<br>
+<br>
+<main>
+    <article>
+        <h2>
+            Some info about site
+        </h2>
+
+        <p>
+            sample text
+        </p>
+
+    </article>
+
+    <div class="wrapper">
+        <div id="todo-container">
+            <div id="date-container">
+                <div class="day-month-year flex row">
+                    <span class="day"></span>
+                    <div class="month-year flex column">
+                        <span class="month"></span>
+                        <span class="year"></span>
+                    </div>
+                    <span class="today"></span>
+                </div>
+
+            </div>
+            <div id="input-container" class="flex column">
+                <input type="text" id="todo" class="todo-show" placeholder="Add your item">
+                <span>Press enter to add an item</span>
+            </div>
+            <ul id="todo-list">
+            </ul>
+            <ul id="done-list">
+                <li class="list-title">Done</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+{{> footer }}
+
+</body>
+</html>

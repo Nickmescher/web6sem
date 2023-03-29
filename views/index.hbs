@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <title>INDEX</title>
+    <script defer src="../js/activeIndex.js"></script>
+
+
+<!--    <script defer type="module" src="js/example.js"></script>-->
+</head>
+<body>
+<br>
+<br>
+<main>
+    <article>
+        <h2>
+            {{ user }}
+        </h2>
+
+        <p>
+            {{ hello }}
+        </p>
+
+    </article>
+
+    <div class="photos invisible-on-mobile" >
+        <ul>
+            <li><img src="../materials/photo1.jpg" data-zoom="materials/photo3.jpg" alt=""></li>
+            <li><img src="../materials/photo3.jpg" alt=""></li>
+            <li><img src="../materials/photo2.jpg" alt=""></li>
+            <li><img src="../materials/photo4.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <br>
+
+    <article class="main_text">
+        <p>
+            Мистер Дурсль потряс головой и попытался выбросить из нее кошку. И пока его автомобиль ехал к Лондону из пригорода, мистер Дурсль думал о крупном заказе на дрели, который рассчитывал сегодня получить.
+        </p>
+
+        <p>
+            Но когда он подъехал к Лондону, заполнившие его голову дрели вылетели оттуда в мгновение ока, потому что, попав в обычную утреннюю автомобильную пробку и от нечего делать глядя по сторонам, мистер Дурсль заметил, что на улицах появилось множество очень странно одетых людей. Людей в мантиях. Мистер Дурсль не переносил людей в нелепой одежде, да взять хотя бы нынешнюю молодежь, которая расхаживает черт знает в чем! И вот теперь эти, нарядившиеся по какой-то дурацкой моде.
+        </p>
+
+        <p>
+            Мистер Дурсль забарабанил пальцами по рулю. Его взгляд упал на сгрудившихся неподалеку странных типов, оживленно шептавшихся друг с другом. Мистер Дурсль пришел в ярость, увидев, что некоторые из них совсем не молоды, — подумать только, один из мужчин выглядел даже старше него, а позволил себе облачиться в изумрудно-зеленую мантию! Ну и тип! Но тут мистера Дурсля осенила мысль, что эти непонятные личности наверняка всего лишь собирают пожертвования или что-нибудь в этом роде... Так оно и есть! Стоявшие в пробке машины наконец тронулись с места, и несколько минут спустя мистер Дурсль въехал на парковку фирмы «Граннингс». Его голова снова была забита дрелями.
+        </p>
+
+    </article>
+
+    <div class="table-title">
+        <h3>Прайс</h3>
+    </div>
+
+    <table class="table-fill">
+        <thead>
+        <tr>
+            <th class="text-left">Предмет</th>
+            <th class="text-left">Цена</th>
+        </tr>
+        </thead>
+        <tbody class="table-hover">
+        <tr>
+            <td class="text-left">Администрирование windows</td>
+            <td class="text-left">$ 50,000.00</td>
+        </tr>
+        <tr>
+            <td class="text-left">Веб программирование</td>
+            <td class="text-left">$ 10,000.00</td>
+        </tr>
+        <tr>
+            <td class="text-left">Машинное обучение</td>
+            <td class="text-left">$ 85,000.00</td>
+        </tr>
+        <tr>
+            <td class="text-left">Прикладная математика</td>
+            <td class="text-left">$ 56,000.00</td>
+        </tr>
+        <tr>
+            <td class="text-left">Иностранный язык</td>
+            <td class="text-left">$ 98,000.00</td>
+        </tr>
+        </tbody>
+    </table>
+
+</main>
+
+{{> footer }}
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper(".swiper", {
+        // navigation elements
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        // pagination elements
+        pagination: {
+            el: ".swiper-pagination",
+        },
+
+        // scrolling
+        mousewheel: true,
+        keyboard: true,
+    });
+</script>
+</body>
+</html>

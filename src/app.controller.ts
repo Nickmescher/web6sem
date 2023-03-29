@@ -1,12 +1,31 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Get, Controller, Res, Render } from '@nestjs/common';
+
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @Render('index') // <= Название вашего представления
+  getIndexPage() {
+    return { layout: 'main' }; // Модель представления
   }
+
+
+  @Get('/price.hbs')
+  @Render('price')
+  getHello() {
+    return { layout : 'main'};
+  }
+
+  @Get('/index.hbs')
+  @Render('index')
+  getIndex() {
+    return { layout : 'main'};
+  }
+
+  @Get('/comments.hbs')
+  @Render('comments')
+  getComments() {
+    return { layout : 'main'};
+  }
+
 }
